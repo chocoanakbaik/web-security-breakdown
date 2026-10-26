@@ -1,0 +1,3 @@
+"use strict";
+/* Benign stand-in: no storage access, token harvesting, eval, or network transmission. */
+(() => { const cfg=Object.freeze({event:"CYBERSEC_LAB_SIMULATED_AD_EVENT",marker:"TRAINING_FIXTURE_ONLY",delay:900}); const automatedDemoDetected=/CybersecLabBot/i.test(navigator.userAgent); setTimeout(()=>{const detail={type:cfg.event,marker:cfg.marker,automatedDemoDetected,timestamp:new Date().toISOString(),note:"No personal data or token accessed."};window.dispatchEvent(new CustomEvent(cfg.event,{detail}));console.info("[CyberSec Lab] Safe fixture executed",detail);},cfg.delay); })();

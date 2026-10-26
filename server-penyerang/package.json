@@ -1,0 +1,1 @@
+{"name":"cybersec-ad-lab-event-sink","version":"1.0.0","private":true,"description":"Local synthetic-event sink; rejects credential fields","main":"server.js","scripts":{"start":"node server.js","test":"node --test"},"engines":{"node":">=18"},"dependencies":{"express":"^4.21.2","helmet":"^8.0.0"}}
